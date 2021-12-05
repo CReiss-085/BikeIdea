@@ -25,7 +25,8 @@ public class MovementManager : MonoBehaviour
             Vector3 spawnP = new Vector3(Random.Range(-80, 80), -2, Random.Range(-80, 80));
             cacti[i] = Instantiate(Cactus, spawnP, Quaternion.identity);
             cacti[i].GetComponent<CactusScript>().grow(spawnP);
-            print(cacti[i].transform.position);
+            
+            //print(cacti[i].transform.position);
 
         }
     }

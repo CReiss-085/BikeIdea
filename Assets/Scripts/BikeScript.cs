@@ -13,7 +13,7 @@ public class BikeScript : MonoBehaviour
     private float engineForce = 800f; // force that the engine 
     private float rotationSpeed = 80f;
     private float dragCoefficient = 2f;
-    float speed = 1f;
+//float speed = 1f;
 
     private float maxLean = 40.0f;
 
