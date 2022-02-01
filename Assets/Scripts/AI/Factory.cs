@@ -6,12 +6,10 @@ public class Factory : MonoBehaviour
 {
     #region EnemyAI lists
 
-    public List<gruntAi> Riflemen;
-    public gruntAi grunt;
+    public List<GruntAi> Riflemen;
+    public GruntAi grunt;
     public float gruntWaveSize;
-    public List<bikerAi> Bikers;
-    public bikerAi biker;
-    public float bikerWaveSize;
+
 
     public List<Gun> guns;
 
@@ -50,7 +48,7 @@ public class Factory : MonoBehaviour
         
         for(int i=0; i < Riflemen.Count; i++)
         {
-            gruntAi newEnemy = Instantiate(grunt, generateSpawnVector(), Quaternion.identity);
+            GruntAi newEnemy = Instantiate(grunt, generateSpawnVector(), Quaternion.identity);
             newEnemy.loadout(player, getGun());
             newEnemy.Init();
             
