@@ -291,11 +291,8 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  grunt: {fileID: -4881513745182028316, guid: 9eb6b1dc0aae5564aa5d3013b70f3cf4, type: 3}
-  gruntWaveSize: 0
-  Bikers: []
-  biker: {fileID: 0}
-  bikerWaveSize: 0
+  grunt: {fileID: -4945031454013684662, guid: 9eb6b1dc0aae5564aa5d3013b70f3cf4, type: 3}
+  gruntWaveSize: 1
   guns:
   - {fileID: 7170651920001017758, guid: f34b39831693cc345b1644047b451e33, type: 3}
   - {fileID: 2221135820923440448, guid: b911d6d79ffd8bf45bbda8011a59c134, type: 3}

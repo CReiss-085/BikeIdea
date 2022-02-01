@@ -42,7 +42,7 @@ public class Factory : MonoBehaviour
         //TODO: Add Logic here to make sure Entity either remains in the pool or becomes a new entity
     }
 
-    void Start()
+    public void Awake()
     {
 
         
