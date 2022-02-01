@@ -1328,7 +1328,7 @@ GameObject:
   - component: {fileID: 3874834857555224720}
   - component: {fileID: 412237147971708079}
   - component: {fileID: 3940266983991501729}
-  - component: {fileID: -4881513745182028316}
+  - component: {fileID: -4945031454013684662}
   m_Layer: 0
   m_Name: grunt
   m_TagString: Enemy
@@ -1394,7 +1394,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2310bde105355454ebbf6261f38b20b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &-4881513745182028316
+--- !u!114 &-4945031454013684662
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1403,10 +1403,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 3874834857555224733}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d600175462a50974793d69aec84e65ae, type: 3}
+  m_Script: {fileID: 11500000, guid: 39b2b74f4e0d37b44b0cb9bdfc6ebbe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tag: 
   startingHP: 0
   speed: 0
   attackRange: 0
@@ -1414,7 +1413,7 @@ MonoBehaviour:
   alive: 0
   rb: {fileID: 3874834857555224720}
   myGun: {fileID: 0}
-  animationStateController: {fileID: 3940266983991501729}
+  animationStateController: {fileID: 0}
   target: {fileID: 0}
   hp: {fileID: 0}
 --- !u!1 &3874834857591981425

@@ -24,7 +24,7 @@ public abstract class Aiv2 : SelfDespawn
 
     public override void Init()
     {
-        
+      /*  
         #region Error Checking
         if (animationStateController == null)
         {
@@ -47,7 +47,8 @@ public abstract class Aiv2 : SelfDespawn
             Debug.LogError("This object needs a Target to Pursue");
         }
         #endregion
-        throw new System.NotImplementedException();
+      */
+        
     }
 
     public override void Update()
