@@ -8,10 +8,10 @@ public class Factory : MonoBehaviour
 
     public List<gruntAi> Riflemen;
     public gruntAi grunt;
-    public float gruntPoolSize;
+    public float gruntWaveSize;
     public List<bikerAi> Bikers;
     public bikerAi biker;
-    public float bikerPoolSize;
+    public float bikerWaveSize;
 
     public List<Gun> guns;
 
@@ -47,12 +47,13 @@ public class Factory : MonoBehaviour
     void Start()
     {
 
-        Riflemen = new List<gruntAi>();
-        for(int i=0; i < gruntPoolSize; i++)
+        
+        for(int i=0; i < Riflemen.Count; i++)
         {
             gruntAi newEnemy = Instantiate(grunt, generateSpawnVector(), Quaternion.identity);
-            newEnemy.Init();
             newEnemy.loadout(player, getGun());
+            newEnemy.Init();
+            
             newEnemy.Despawn += op_KILLME; //this line adds the despawn event to this entity 
             newEnemy.gameObject.SetActive(true);
 

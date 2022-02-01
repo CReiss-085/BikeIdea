@@ -5,7 +5,7 @@ using UnityEngine;
 public class ObjectPoolSpawner : MonoBehaviour
 {
 
-    public EnemyAI objectToPool; 
+    public EnemyAI objectToPool;
     public Gun gunToPool;
     public GameObject player;
     public ScoreTracker scoreKeeper;

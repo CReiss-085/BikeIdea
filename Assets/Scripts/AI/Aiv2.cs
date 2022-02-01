@@ -8,7 +8,6 @@ public abstract class Aiv2 : SelfDespawn
 
 
     //Variables that can be set when the new abstract Enemy is contructed 
-    public string tag;
     public int startingHP;
     public int speed;
     public int attackRange;
@@ -25,7 +24,7 @@ public abstract class Aiv2 : SelfDespawn
 
     public override void Init()
     {
-        SetStats();
+        
         #region Error Checking
         if (animationStateController == null)
         {
@@ -92,7 +91,6 @@ public abstract class Aiv2 : SelfDespawn
     #endregion
 }
 
-
 public class gruntAi : Aiv2
 {
     public void Awake()
@@ -124,7 +122,7 @@ public class gruntAi : Aiv2
         //Currently Walking twoards the target 
 
         if (dMag < speed)
-        {         
+        {
             desiredVec *= dMag; //Slowing down walking speed as AI approaches Target 
             if (dMag < attackRange)
             {
@@ -149,18 +147,17 @@ public class gruntAi : Aiv2
         speed = 10;
         attackRange = 10;
         score = 69;
-        throw new System.NotImplementedException();
     }
 
     public void loadout(GameObject player, Gun gun)
     {
         target = player;
         myGun = gun;
-        throw new NotImplementedException();
     }
 
 
 }
+
 
 
 public class bikerAi : Aiv2
